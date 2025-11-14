@@ -20,16 +20,16 @@ GramSchmidt <- function(espaco,ortonormalizar){
   return(espaco_ortogonal)
 }
 
-espaco_vetorial <- list(
-  c(1,1,0),
-  c(1,0,1),
-  c(0,1,1)
-)
+#espaco_vetorial <- list(
+ # c(1,1,0),
+#  c(1,0,1),
+#  c(0,1,1)
+#)
 
-cat(str(GramSchmidt(espaco_vetorial,FALSE)))
+#cat(str(GramSchmidt(espaco_vetorial,FALSE)))
 
 espaco_vetorial <- list(
-  c(1,2),
-  c(3,1)
+  c(2,0),
+  c(1,1)
 )
-cat(str(GramSchmidt(espaco_vetorial,FALSE)))
+cat(str(GramSchmidt(espaco_vetorial,TRUE)))
